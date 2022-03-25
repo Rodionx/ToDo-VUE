@@ -28,19 +28,13 @@
       </div>
     </div>
   </div>
-
-  <Lista msg="Welcome to Your Vue.js App" />
 </template>
 
 <script>
-import Lista from "./components/Lista.vue";
 import useTodos from "./composables/useTodos";
 
 export default {
   name: "App",
-  components: {
-    Lista,
-  },
 
   setup() {
     const { todo, todos, addTodo, deleteTodo, dateTime, deleteall } =
